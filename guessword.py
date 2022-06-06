@@ -16,6 +16,7 @@ def roll():
     P3 = random.sample(Suit3,1)
     Suit4 = [x for x in Suit3 if x not in P3]
     YOU = random.sample(Suit4,1)
+    st.write(type(YOU))
     if (P1 == ['Raja']):
         P1Sc = P1Sc + 1000
     elif (P1 == ['Sipahi']):
