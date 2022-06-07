@@ -61,15 +61,12 @@ def roll():
 def guessThief():
     if (P1 == ['Mantri'])and (P2 == ['Raja']):
         P1guess = random.sample(["P3","YOU"],1)
-        st.write(P1guess)
-        st.write(type(P1guess))
     elif(P1 == ['Mantri'])and(P3 == ['Raja']):
         P1guess = random.sample(["P2","YOU"],1)
-        st.write(P1guess)
     elif (P1 == ['Mantri'])and(YOU == ['Raja']):
         P1guess = random.sample(["P2","P3"],1)
-        st.write(P1guess)
 if st.button("Roll"):
   roll()
 
+#guess the thief
 guessThief()
