@@ -27,7 +27,7 @@ with cl4:
 
 
 def roll():
-    global P1Sc, P2Sc, P3Sc, YOUSc
+    global st.session_stat.P1Sc, st.st.session_state.P2Sc, st.session_state.P3Sc, st.session_state.YOUSc
   
     Suit1 = [ "Raja","Mantri","Chor","Sipahi" ]
     P1 = random.sample(Suit1,1)
@@ -67,18 +67,18 @@ def guessThief():
         P1guess = random.sample(["P2","P3"],1)
     #second player guesses
     elif (P2 == ['Mantri'])and (P1 == ['Raja']):
-        P1guess = random.sample(["P3","YOU"],1)
+        P2guess = random.sample(["P3","YOU"],1)
     elif(P2 == ['Mantri'])and(P3 == ['Raja']):
-        P1guess = random.sample(["P2","YOU"],1)
+        P2guess = random.sample(["P2","YOU"],1)
     elif (P2 == ['Mantri'])and(YOU == ['Raja']):
-        P1guess = random.sample(["P2","P3"],1)
+        P2guess = random.sample(["P2","P3"],1)
     #third player guesses
     elif (P3 == ['Mantri'])and (P1 == ['Raja']):
-        P1guess = random.sample(["P3","YOU"],1)
+        P3guess = random.sample(["P3","YOU"],1)
     elif(P3 == ['Mantri'])and(P3 == ['Raja']):
-        P1guess = random.sample(["P2","YOU"],1)
+        P3guess = random.sample(["P2","YOU"],1)
     elif (P3 == ['Mantri'])and(YOU == ['Raja']):
-        P1guess = random.sample(["P2","P3"],1)
+        P3guess = random.sample(["P2","P3"],1)
 if st.button("Roll"):
   roll()
 
