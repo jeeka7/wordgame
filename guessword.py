@@ -39,21 +39,21 @@ def roll():
     YOU = random.sample(Suit4,1)
     st.write(type(YOU))
     if (P1 == ['Raja']):
-        P1Sc = P1Sc + 1000
+        st.session_state.P1Sc = st.session_state.P1Sc + 1000
     elif (P1 == ['Sipahi']):
-        P1Sc = P1Sc + 500
+        st.session_state.P1Sc = st.session_state.P1Sc + 500
     if (P2 == ['Raja']):
-        P2Sc = P2Sc + 1000
+        st.session_state.P2Sc = st.session_state.P2Sc + 1000
     elif (P2 == ['Sipahi']):
-        P2Sc = P2Sc + 500
+        st.session_state.P2Sc = st.session_state.P2Sc + 500
     if (P3 == ['Raja']):
-        P3Sc = P3Sc + 1000
+        st.session_state.P3Sc = st.session_state.P3Sc + 1000
     elif (P3 == ['Sipahi']):
-        P3Sc = P3Sc + 500
+        st.session_state.P3Sc = st.session_state.P3Sc + 500
     if (YOU == ['Raja']):
-        YOUSc = YOUSc + 1000
+        st.session_state.YOUSc = st.session_state.YOUSc + 1000
     elif (YOU == ['Sipahi']):
-        YOUSc = YOUSc + 500
+        st.session_state.YOUSc = st.session_state.YOUSc + 500
     st.write(P1Sc,P1)
     st.write(P2Sc,P2)
     st.write(P3Sc,P3)
