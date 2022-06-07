@@ -69,7 +69,7 @@ def guessThief():
     elif (P1 == ['Mantri'])and(YOU == ['Raja']):
         P1guess = random.sample(["P2","P3"],1)
         st.write(P1guess)
-if st.button("Roll")
+if st.button("Roll"):
   roll()
-if st.button("Guess Thief")
+if st.button("Guess Thief"):
 guessThief()
