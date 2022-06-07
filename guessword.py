@@ -71,5 +71,5 @@ def guessThief():
         st.write(P1guess)
 if st.button("Roll"):
   roll()
-if st.button("Guess Thief"):
-  guessThief()
+
+guessThief()
