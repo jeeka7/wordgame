@@ -65,6 +65,20 @@ def guessThief():
         P1guess = random.sample(["P2","YOU"],1)
     elif (P1 == ['Mantri'])and(YOU == ['Raja']):
         P1guess = random.sample(["P2","P3"],1)
+    #second player guesses
+    elif (P2 == ['Mantri'])and (P1 == ['Raja']):
+        P1guess = random.sample(["P3","YOU"],1)
+    elif(P2 == ['Mantri'])and(P3 == ['Raja']):
+        P1guess = random.sample(["P2","YOU"],1)
+    elif (P2 == ['Mantri'])and(YOU == ['Raja']):
+        P1guess = random.sample(["P2","P3"],1)
+    #third player guesses
+    elif (P3 == ['Mantri'])and (P1 == ['Raja']):
+        P1guess = random.sample(["P3","YOU"],1)
+    elif(P3 == ['Mantri'])and(P3 == ['Raja']):
+        P1guess = random.sample(["P2","YOU"],1)
+    elif (P3 == ['Mantri'])and(YOU == ['Raja']):
+        P1guess = random.sample(["P2","P3"],1)
 if st.button("Roll"):
   roll()
 
