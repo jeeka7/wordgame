@@ -27,7 +27,7 @@ with cl4:
 
 
 def roll():
-    global st.session_stat.P1Sc, st.st.session_state.P2Sc, st.session_state.P3Sc, st.session_state.YOUSc
+    global P1Sc, P2Sc, P3Sc, YOUSc
   
     Suit1 = [ "Raja","Mantri","Chor","Sipahi" ]
     P1 = random.sample(Suit1,1)
