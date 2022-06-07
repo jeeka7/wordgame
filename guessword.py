@@ -72,4 +72,4 @@ def guessThief():
 if st.button("Roll"):
   roll()
 if st.button("Guess Thief"):
-guessThief()
+  guessThief()
