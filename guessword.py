@@ -5,6 +5,27 @@ import random
 P1,P2,P3,YOU = [None, None, None, None]
 P1Sc, P2Sc, P3Sc, YOUSc = [0, 0, 0, 0]
 
+if "P1Sc" not in st.session_state:
+  st.session_state.P1Sc = 0
+if "player" not in st.session_state:
+  st.session_state.P2Sc = 0
+if "x" not in st.session_state:
+  st.session_state.P3Sc = 0
+if "y" not in st.session_state:
+  st.session_state.YOUSc = 0
+cl1, cl2 , cl3 , cl4 = st.columns(4)
+
+with cl1:
+  st.metric(label="You", value=st.session_state.YOUSc)
+with cl2:
+  st.metric(label="Player 1", value=st.session_state.P1Sc)
+with cl3:
+  st.metric(label="Player 2", value=st.session_state.P2Sc)
+with cl4:
+  st.metric(label="Player 3", value=st.session_state.P3Sc)
+
+
+
 def roll():
     global P1Sc, P2Sc, P3Sc, YOUSc
   
